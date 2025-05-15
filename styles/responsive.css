@@ -20,6 +20,7 @@
 /* Mobile 849~320 */
 @media screen and (max-width:849px){
     #wrap .intro {padding:0 15px;}
+    #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
     /* ============================================2행 quiz */
     #wrap .quiz {padding:70px 15px;}
     #wrap .quiz .container {grid-template-columns:1fr;}
