@@ -1,4 +1,6 @@
 /* index.css */
+/* 반응형 css 속성 변경 시 애니메이션 적용 속성 */
+body * {transition:all 0.5s;}
 /* 1행==================================북극곰 후원 안내 */
 #wrap {}/* 기본값 유지를 위해 작성하지 않음. 기본값 -> 너비는 부모의 100%, 높이는 내용만큼 */
 #wrap .intro {
@@ -57,7 +59,8 @@
     padding:150px 0;
 }
 #wrap .quiz .container {
-    width:1250px; border:1px solid aqua;
+    max-width:1250px; min-width:320px;
+    border:1px solid aqua;
     margin:0 auto;
     display:grid;/* 왼쪽퀴즈, 오른쪽참여현황 정렬grid */
     grid-template-columns:1fr 1fr;
@@ -101,9 +104,31 @@
 #wrap .quiz .container .right {text-align:right;}
 #wrap .quiz .container .right p {}
 #wrap .quiz .container .right p:nth-child(1) {}
-#wrap .quiz .container .right p:nth-child(1) img {}
+#wrap .quiz .container .right p:nth-child(1) img {width:100%}
 #wrap .quiz .container .right p:nth-child(2) {color:#fff;}
 /* 3행==================================새끼북극곰 이야기 */
+#wrap .ad {
+    background:url(../images/video_bg.png) right / cover;
+    padding:200px 0;
+}
+#wrap .ad .container {max-width:1250px; min-width:320px; text-align:center; margin:0 auto;}
+#wrap .ad .container h2 {
+    font-size:3.438rem; font-weight:500;
+    line-height:120%; letter-spacing:-1%;
+}
+#wrap .ad .container iframe {
+    margin:70px 0;
+    width:100%;
+    max-width:900px; height:600px;
+}
+#wrap .ad .container .sponser_btn {
+    display:block;
+    width:409px; margin:70px auto 0;
+    line-height:71px;
+    background:linear-gradient(90deg, #fe9300 , #ff7300);
+    border-radius:50px;
+    color:#fff; font-weight:700; font-size:2.125rem;
+}
 /* 4행==================================빙하면적감소 */
 /* 5행==================================인류재앙 */
 /* 6행==================================지구위기 */
